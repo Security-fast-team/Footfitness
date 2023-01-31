@@ -1,21 +1,10 @@
 @extends('frontend.layouts.app')
 @push('custom-css')
-    <style>
-        .product-image {
-            max-height: 100px;
-        }
-    </style>
 @endpush
 @section('page_conent')
-    <div class="main-content-wrapper home-page">
-        <div class="wrapper-container" style="padding-top: 59px;">
-          <marquee behavior="" direction="">FootFitness</marquee>
-
-        </div>
+    <h2>Bangladesh</h2>
 
 
-
-    </div>
 @endsection
 @push('custom-js')
 
