@@ -26,10 +26,10 @@ class AppServiceProvider extends ServiceProvider
      */
     public function boot()
     {
-    //     Paginator::useBootstrap();
-    //     $site_info = CompanyInfo::first();
-    //    $site_contact_info = CompanyContact::first();
-    //     view()->share('site_info',$site_info);
-    //     view()->share('site_contact_info',$site_contact_info);
+        Paginator::useBootstrap();
+        $site_info = CompanyInfo::first();
+       $site_contact_info = CompanyContact::first();
+        view()->share('site_info',$site_info);
+        view()->share('site_contact_info',$site_contact_info);
     }
 }
