@@ -64,16 +64,17 @@ class OrderController extends Controller
         Validator::make($request->all(),$rule,$msg,$attributes);
         $order_number = 'ORD-'.strtoupper(Str::random(10));
 
-        foreach($request->product as $key => $qty){
+        // foreach($request->product as $key => $qty){
+            // dd($request->all());
             $insert=new Order();
-            $insert->product_id = $key;
+            $insert->product_id = $request->product_id;
             $insert->shipping_id = $request->shipping_id;
             $insert->user_id = $request->user_id;
             $insert->name = $request->name;
             $insert->address = $request->address;
             $insert->note = $request->note;
             $insert->phone = $request->phone;
-            $insert->quantity = Converter::bn2en($qty['qty']);
+            $insert->quantity = 1;
             $insert->payment_id = $request->payment_id;
             $insert->payment_number = $request->payment_number;
             $insert->transection = $request->transection;
@@ -95,12 +96,12 @@ class OrderController extends Controller
              $insert->status = 'active';
             $insert->save();
 
-            $product_update = Product::find($key);
-           if($product_update != null){
-                $product_update->stock = $product_update->stock - Converter::bn2en($qty['qty']);
-                $product_update->save();
-           }
-        }
+        //     $product_update = Product::find($key);
+        //    if($product_update != null){
+        //         $product_update->stock = $product_update->stock - Converter::bn2en($qty['qty']);
+        //         $product_update->save();
+        //    }
+        // }
 
        $n['order_details'] = Order::where('phone',$request->phone)
                                     ->where('order_number',$order_number)
