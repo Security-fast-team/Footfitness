@@ -43,17 +43,7 @@ class FrontendController extends Controller
             if(count($data)<1){
                 return redirect()->route('company-details.create');
             }
-
-            $n['company_info'] = CompanyInfo::first();
-            $n['company_contact_info'] = CompanyContact::first();
             $n['shipping'] = Shipping::all();
-            //$n['products'] = Product::all();
-            $n['products'] = DB::table('products')->where('condition', '=', 'new')->orderBy('id', 'DESC')->limit('12')->get();
-            $n['products_hot'] = DB::table('products')->where('condition', '=', 'hot')->orderBy('id', 'DESC')->limit('12')->get();
-            $n['products_default'] = DB::table('products')->where('condition', '=', 'default')->orderBy('id', 'DESC')->limit('10')->get();
-            $n['categories'] = Category::all();
-            $n['categories'] = DB::table('categories')->orderBy('id', 'DESC')->limit('6')->get();
-
             return view('frontend.index',$n);
 
     }
