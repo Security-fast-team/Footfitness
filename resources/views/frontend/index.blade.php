@@ -34,7 +34,7 @@
                     <!--///////-video-section-End-///////-->
 
                     <!--///////-service-section-start-///////-->
-            
+
 <div class="service-section">
     <div class="container">
         <div class="btn-column">
@@ -42,11 +42,13 @@
         </div>
         <div class="service-main-column">
             <div class="service-title">
-            <h2> 
+            <h2>
                 মধুময় বাদামে রয়েছে উন্নতমানের <span>৩৬ টি উপাদান,</span></h2>
             </div>
-            <div class="flex-column">
-                <div class="service-single-column">
+
+            {{-- clsess have to remove flex-column  --}}
+            <div class="flex-column row">
+                <div class="service-single-column col-md-6">
                     <div class="content">
                         <div class="service-img">
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
@@ -55,7 +57,7 @@
                     </div>
                 </div>
 
-                <div class="service-single-column">
+                <div class="service-single-column col-md-6 ">
                     <div class="content">
                         <div class="service-img">
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
@@ -64,18 +66,18 @@
                     </div>
                 </div>
 
-                <div class="service-single-column">
+                <div class="service-single-column col-md-6">
                     <div class="content">
                         <div class="service-img">
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
                         </div>
-                        <h2> 
+                        <h2>
                             পেস্তা বাদাম
                             </h2>
                     </div>
                 </div>
 
-                <div class="service-single-column">
+                <div class="service-single-column col-md-6">
                     <div class="content">
                         <div class="service-img">
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
@@ -84,29 +86,29 @@
                     </div>
                 </div>
 
-                <div class="service-single-column">
+                <div class="service-single-column col-md-6">
                     <div class="content">
                         <div class="service-img">
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
                         </div>
-                        <h2> 
+                        <h2>
                             ড্রাই ম্যাংগো লাল
                             </h2>
                     </div>
                 </div>
 
-                <div class="service-single-column">
+                <div class="service-single-column col-md-6">
                     <div class="content">
                         <div class="service-img">
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
                         </div>
-                        <h2> 
+                        <h2>
                             রক মেলন
                             </h2>
                     </div>
                 </div>
 
-                <div class="service-single-column">
+                <div class="service-single-column col-md-6">
                     <div class="content">
                         <div class="service-img">
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
@@ -115,51 +117,51 @@
                     </div>
                 </div>
 
-                <div class="service-single-column">
+                <div class="service-single-column col-md-6">
                     <div class="content">
                         <div class="service-img">
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
                         </div>
-                        <h2> 
+                        <h2>
                             কাল সাকুরা
                             </h2>
                     </div>
                 </div>
 
-                <div class="service-single-column">
+                <div class="service-single-column col-md-6">
                     <div class="content">
                         <div class="service-img">
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
                         </div>
-                        <h2> 
+                        <h2>
                             লাল সাকুরা
                             </h2>
                     </div>
                 </div>
 
-                <div class="service-single-column">
+                <div class="service-single-column col-md-6">
                     <div class="content">
                         <div class="service-img">
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
                         </div>
-                        <h2> 
+                        <h2>
                             ড্রাই ম্যাংগো হলুদ
                             </h2>
                     </div>
                 </div>
 
-                <div class="service-single-column">
+                <div class="service-single-column col-md-6">
                     <div class="content">
                         <div class="service-img">
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
                         </div>
-                        <h2> 
+                        <h2>
                             চেরি টমেটো
                             </h2>
                     </div>
                 </div>
 
-                <div class="service-single-column">
+                <div class="service-single-column col-md-6">
                     <div class="content">
                         <div class="service-img">
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
@@ -168,34 +170,34 @@
                     </div>
                 </div>
 
-                <div class="service-single-column">
+                <div class="service-single-column col-md-6">
                     <div class="content">
                         <div class="service-img">
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
                         </div>
-                        <h2> 
+                        <h2>
                             গোল্ডেন কিসমিস
                             </h2>
                     </div>
                 </div>
 
-                <div class="service-single-column">
+                <div class="service-single-column col-md-6">
                     <div class="content">
                         <div class="service-img">
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
                         </div>
-                        <h2> 
+                        <h2>
                             কালো কিসমিস
                             </h2>
                     </div>
                 </div>
 
-                <div class="service-single-column">
+                <div class="service-single-column col-md-6">
                     <div class="content">
                         <div class="service-img">
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
                         </div>
-                        <h2> 
+                        <h2>
                             ড্রাই আলুবোখারা
                             </h2>
                     </div>
@@ -215,7 +217,7 @@
     <div class="sefty-device-main">
         <div class="flex-column">
             <div class="product-column">
-                <img class="sefty-device-img" src="img/honey.jpg" alt="sefty-device">
+                <img class="sefty-device-img" src="{{asset('images/ingredients-05.jpg')}}" alt="sefty-device">
             </div>
             <div class="product-details-column">
                 <h2>Honey Nuts - <span>মধুময় বাদাম</span>
@@ -247,7 +249,7 @@
             <div class="left-col">
                <h2> ঢাকার বাহিরে- <span> ১২০ টাকা</span></h2>
             </div>
-            
+
         </div>
     </div>
 </div>
@@ -265,7 +267,7 @@
         <div class="left-col">
             <h2> ২. যেহেতু পন্য হাতে পেয়ে চেক করে এমনকি খেয়ে মুল্য পরিশোধ করতে পারছেন, তাই নিশ্চিতে অর্ডার করতে পারেন।</span></h2>
         </div>
-        
+
     </div>
 </div>
 <div class="btn-column">
@@ -299,7 +301,7 @@
                     <div class="order-cart">
                         <table>
                             <thead class="order-heading">
-                            <tr>   
+                            <tr>
                                 <th><h3>Product</h3></th>
                                 <th><h3>Subtotal</h3></th>
                             </tr>
