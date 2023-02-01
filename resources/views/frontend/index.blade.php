@@ -35,14 +35,14 @@
 
                     <!--///////-service-section-start-///////-->
 
-<div class="service-section">
-    <div class="container">
-        <div class="btn-column">
-            <a class="order-btn" href="#order-sec">এখানে অর্ডার করুন </a>
+<div class="service-section ">
+    {{-- <div class="container"> --}}
+        <div class="btn-column" style="margin-top: 15px">
+            <a class="order-btn" href="#order-sec" >এখানে অর্ডার করুন </a>
         </div>
-        <div class="service-main-column">
-            <div class="service-title">
-            <h2>
+        <div class="service-main-column bg-s">
+            <div class="service-title bg-color">
+            <h2 class="white">
                 মধুময় বাদামে রয়েছে উন্নতমানের <span>৩৬ টি উপাদান,</span></h2>
             </div>
 
@@ -204,7 +204,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    {{-- </div> --}}
 </div>
 
 
