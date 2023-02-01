@@ -1,6 +1,8 @@
-<footer class="footer">
-    <footer class="wrapper-container">
-        <div class="footer-content d-flex flex-wrap">
+ <!--///////-footer-section-start-///////-->
+
+ <div class="footer-section">
+    <div class="container">
+        <div class="flex-column">
             <div class="footer-widget footer-contact-info">
                 <h4 class="title">Contact Us</h4>
                 <ul class="contact_footer">
@@ -26,16 +28,16 @@
                     <li><a href="#">Cashback Terms & Conditions</a></li>
                 </ul>
             </div>
-            <div class="copy-right">
+            <div class="copy-right">    
                 <p class="m-0">All Rights Reserved <strong>{{ ucfirst($site_info->name) }}</strong> | Designed
                     And developed by <strong>Security First</strong> | Powdered by <strong>Business Mind
                         Academy</strong></p>
             </div>
-        </div>
-        </div>
-    </footer>
-</footer>
 
+        </div>
+    </div>
+</div>
+                    <!--///////-footer-section-end-///////-->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
     integrity="sha384-w76AqPfDkMBDXo30jS1Sgez6pr3x5MlQ1ZAGC+nuZB+EYdgRZgiwxhTBTkF7CXvN" crossorigin="anonymous">
