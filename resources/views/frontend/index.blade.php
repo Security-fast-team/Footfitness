@@ -214,7 +214,7 @@
 
 <div class="sefty-device-section">
 <div class="container">
-    <div class="sefty-device-main">
+    <div class="sefty-device-main box-shadow border border-ra">
         <div class="flex-column">
             <div class="product-column">
                 <img class="sefty-device-img" src="{{asset('images/ingredients-05.jpg')}}" alt="sefty-device">
@@ -281,7 +281,7 @@
     @csrf
     <div class="order-section" >
         <div class="container" id="order-sec">
-            <div class="order-main" >
+            <div class="order-main box-shadow border-ra" >
                 <h2 class="order-title">অর্ডার করতে আপনার সঠিক তথ্য দিয়ে নিচের ফর্মটি সম্পূর্ণ পূরন করুন। (আগে থেকে কোন টাকা দেয়া লাগবে না। প্রোডাক্ট হাতে পাবার পর টাকা দিবেন)</h2>
                 <div class="flex-column">
                     <div class="billing-details-column">
