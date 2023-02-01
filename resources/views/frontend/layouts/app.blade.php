@@ -16,8 +16,7 @@
     {{-- Header  --}}
     @include('frontend.partials.footer')
 
-
-@stack('js')
+    @stack('js')
 
 </body>
 
