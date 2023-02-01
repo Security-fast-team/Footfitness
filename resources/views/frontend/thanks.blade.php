@@ -127,9 +127,9 @@
                     <th>Payment method:</th>
                 </tr>
                 <tr>
-                    <td>3452</td>
-                    <td>February 1, 2023</td>
-                    <td>৳ 950.00</td>
+                    <td>{{$order->order_number}}</td>
+                    <td>{{date('d-m-Y', strtotime($order->created_at))}}</td>
+                    <td>৳ {{$order->price + $order->shipping->price}}</td>
                     <td>Cash on delivery</td>
                 </tr>
             </table>
