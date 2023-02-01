@@ -241,6 +241,7 @@
                     <!--///////-DELEVERY-section-START-///////-->
 <div class="delevery-charg-section">
     <div class="container">
+        <div class="main">
         <h2 class="title">ডেলিভারি চার্জ</h2>
         <div class="flex-column">
             <div class="left-col">
@@ -251,6 +252,7 @@
             </div>
 
         </div>
+        </div>
     </div>
 </div>
                      <!--///////-DELEVERY-section-End-///////-->
@@ -258,6 +260,7 @@
                    <!--///////-why-choose-section-START-///////-->
 <div class="why-choose-section">
 <div class="container">
+    <div class="main">
     <h2 class="title">
         কেন আমাদের পন্যটাই <span>অর্ডার করবেন ?</span></h2>
     <div class="flex-column">
@@ -268,6 +271,7 @@
             <h2> ২. যেহেতু পন্য হাতে পেয়ে চেক করে এমনকি খেয়ে মুল্য পরিশোধ করতে পারছেন, তাই নিশ্চিতে অর্ডার করতে পারেন।</span></h2>
         </div>
 
+    </div>
     </div>
 </div>
 <div class="btn-column">
@@ -281,7 +285,7 @@
     @csrf
     <div class="order-section" >
         <div class="container" id="order-sec">
-            <div class="order-main box-shadow border-ra" >
+            <div class="order-main" >
                 <h2 class="order-title">অর্ডার করতে আপনার সঠিক তথ্য দিয়ে নিচের ফর্মটি সম্পূর্ণ পূরন করুন। (আগে থেকে কোন টাকা দেয়া লাগবে না। প্রোডাক্ট হাতে পাবার পর টাকা দিবেন)</h2>
                 <div class="flex-column">
                     <div class="billing-details-column">
