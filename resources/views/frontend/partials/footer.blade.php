@@ -28,15 +28,20 @@
                     <li><a href="#">Cashback Terms & Conditions</a></li>
                 </ul>
             </div>
-            <div class="copy-right">    
-                <p class="m-0">All Rights Reserved <strong>{{ ucfirst($site_info->name) }}</strong> | Designed
-                    And developed by <strong>Security First</strong> | Powdered by <strong>Business Mind
-                        Academy</strong></p>
-            </div>
 
         </div>
     </div>
 </div>
+<div class="bottom-footer">
+        <div class="container">
+        <div class="copy-right">
+            <p class="m-0">All Rights Reserved <strong>{{ ucfirst($site_info->name) }}</strong> | Designed
+                And developed by <strong>Security First</strong> | Powdered by <strong>Business Mind
+                    Academy</strong></p>
+        </div>
+     </div>
+</div>
+
                     <!--///////-footer-section-end-///////-->
 
 <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"
