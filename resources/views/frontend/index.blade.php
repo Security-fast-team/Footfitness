@@ -2,7 +2,9 @@
 @push('custom-css')
 @endpush
 @section('page_conent')
+
  <!--///////-header-section-start-///////-->
+
 
  <div class="header-section">
     <div class="container">
