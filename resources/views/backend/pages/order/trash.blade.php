@@ -47,8 +47,10 @@
                                             <td>{{ $order->order_number }}</td>
                                             <td>{{ $order->name }}</td>
                                             <td>{{ $order->phone }}</td>
-                                            <td>{{ $order->shipping->price }}</td>
-                                            <td>৳{{ number_format($price+$order->shipping->price) }}
+                                            @if ($order->shipping->type)
+                                                <td class="align-middle">{{ $order->shipping->type . '(৳' . Number_format($order->shipping->price) . ')' }}</td>
+                                                <td class="align-middle">৳{{ Number_format($price+$order->shipping->price) }}</td>
+                                            @endif
                                             </td>
                                             <td>{{$order->updated_at->diffForHumans()}}</td>
                                             <td>
