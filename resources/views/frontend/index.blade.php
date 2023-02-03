@@ -334,7 +334,7 @@
                                             <td><span><img src="img/product-img01.jpg" alt=""></span><span>মধুময়
                                                     বাদাম ৫০০ গ্রাম।</span></td>
                                             <td>
-                                                <h3><span>x1</span>৳500</h3>
+                                                <h3><span>x1</span>{{$price}}</h3>
                                             </td>
                                         </tr>
                                         <tr class="total-bill">
@@ -343,7 +343,7 @@
                                                 <h4>Shipping</h4>
                                             </td>
                                             <td>
-                                                <h4><span>৳</span> <span id="sub-total">500</span></h4>
+                                                <h4><span>৳</span><span id="sub-total">{{$price}}</span></h4>
                                                 @foreach ($shipping as $key => $ship)
                                                     <input type="radio" id="html{{ $ship->id }}" class="shipping"
                                                         data-price="{{ $ship->price }}" name="shipping_id"
@@ -360,7 +360,7 @@
                                                 <h3>Total</h3>
                                             </td>
                                             <td>
-                                                <h3><span>৳</span><span class="total-bills">500</span></h3>
+                                                <h3><span>৳</span><span class="total-bills">{{$price}}</span></h3>
                                             </td>
                                         </tr>
                                     </tbody>
