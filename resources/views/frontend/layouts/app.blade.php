@@ -1,6 +1,3 @@
-@php
-    $categories = App\Models\Category::all();
-@endphp
 
 <!DOCTYPE html>
 <html dir="ltr" lang="bn">
