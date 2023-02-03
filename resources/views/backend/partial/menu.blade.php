@@ -52,7 +52,7 @@
 </li>
 
 {{-- Add Order status   --}}
-@if (Auth::user()->name == 'admin' && Auth::user()->roll == 2)
+@if (Auth::user()->name == 'admin' || Auth::user()->roll == 2)
 
      <li class="nav-item {{ Request::is('order-status/*') ? 'menu-open' : '' }}">
         <a href="#" class="nav-link">
@@ -84,7 +84,7 @@
     @endif
 
     {{-- Setting  --}}
-@if (Auth::user()->name == 'admin' && Auth::user()->roll == 2)
+@if (Auth::user()->name == 'admin' || Auth::user()->roll == 2)
      <li class="nav-item {{ Request::is('order-status/*') ? 'menu-open' : '' }}">
         <a href="#" class="nav-link">
             <i class="nav-icon fas fa-users"></i>
