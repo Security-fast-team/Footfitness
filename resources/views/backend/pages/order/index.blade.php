@@ -66,7 +66,7 @@
                                             <td class="align-middle">{{ $order->name }}</td>
                                             <td class="align-middle">{{ $order->phone }}</td>
                                             <td class="align-middle">{!! $order->address !!}</td>
-                                            @if ($order->shipping->type)
+                                            @if ($order->shipping)
                                                 <td class="align-middle">{{ $order->shipping->type . '(৳' . Number_format($order->shipping->price) . ')' }}</td>
                                                 <td class="align-middle">৳{{ Number_format($price+$order->shipping->price) }}</td>
                                             @endif
