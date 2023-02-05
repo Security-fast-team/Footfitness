@@ -552,6 +552,13 @@ animation-iteration-count: infinite;
     background: transparent;
     border: none;
 }
+.why-order .left-col{
+    width: 48% !important;
+}
+.why-order .option2{
+    width: 48% !important;
+    margin-left: 4%;
+}
                                     /* =============Footer-section-start ===========*/
 .footer-section{
     background: #0D7E73;
@@ -648,6 +655,22 @@ animation-iteration-count: infinite;
     }
  }
  @media only screen and (max-width: 767px){
+    .why-order{
+        display: block;
+    }
+
+    .why-order .left-col{
+        width: 100% !important;
+    }
+    .why-order .option2{
+        width: 100% !important;
+        margin-left: 0px !important;
+        margin-top: 15px;
+    }
+    .why-order h2{
+        margin: auto;
+    }
+
     .container{
         padding: 0 8px;
         padding-left: 19px

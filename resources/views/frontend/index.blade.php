@@ -183,12 +183,12 @@
             <div class="main">
                 <h2 class="title">
                     কেন আমাদের পন্যটাই <span>অর্ডার করবেন ?</span></h2>
-                <div class="flex-column">
+                <div class="flex-column why-order">
                     <div class="left-col">
                         <h2> ১. আমাদের পেজ এবং গ্রুপে পাবেন এই মধুময় বাদাম এর শতশত পজেটিভ রিভিউ আলহামদুলিল্লাহ, যারা হাতে
                             পেয়ে চেক করে খেয়ে রিভিউগুলো দিয়েছেন।</h2>
                     </div>
-                    <div class="left-col">
+                    <div class="left-col option2">
                         <h2> ২. যেহেতু পন্য হাতে পেয়ে চেক করে এমনকি খেয়ে মুল্য পরিশোধ করতে পারছেন, তাই নিশ্চিতে অর্ডার করতে
                             পারেন।</span></h2>
                     </div>
