@@ -219,10 +219,10 @@
               <th>Payment method:</th>
             </tr>
             <tr>
-              <td>ORD-XSZTRHYCXH</td>
-              <td>03-02-2023</td>
-              <td><span>৳</span>3110</td>
-              <td>Cash on delivery</td>
+                <td>{{$order->order_number}}</td>
+                <td>{{date('d-m-Y', strtotime($order->created_at))}}</td>
+                <td>৳ {{$order->price + $order->shipping->price}}</td>
+                <td>Cash on delivery</td>
             </tr>
           </table>
         </div>
