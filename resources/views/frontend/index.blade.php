@@ -140,16 +140,16 @@
                         <img class="sefty-device-img" src="{{ asset('images/1.jpg') }}" alt="sefty-device">
                     </div>
                     <div class="product-details-column">
-                        <h2>Honey Nuts - <span>মধুময় বাদাম</span>
+                        {{-- <h2>Honey Nuts - <span>মধুময় বাদাম</span>
                             এর উপকারিতা।</h2>
                         <p>✔️ রক্তে কোলেস্টেরল কমানোর পাশাপাশি ক্যান্সার সৃষ্টি হওয়া থেকে বাধা দেয় এটি।</p>
                         <p>✔️ শরীরের রোগ প্রতিরোধ ক্ষমতা বৃদ্ধিসহ হার্ট অ্যাটাক ও স্টোকের আশংকা কমায়। </p>
                         <p>✔️ চেহারায় লাবণ্য ধরে রাখতে খুবই কার্যক</p>
                         <p>✔️ যারা শরী’র ফি’ট রাখতে চান তাদের জন্য খুবই উ’পকারী</p>
                         <p>✔️ স্মৃতিশক্তি বৃদ্ধি করে এবং তীক্ষ্ণ মেধা সম্পন্ন হতে সাহায্য করে।</p>
-                        <p>✔️ অকাল বা’র্ধক্য রোধে অত্যন্ত কার্যকর ভূমিকা রাখে।</p>
-                        <div class="btn-column">
-                            <a class="order-btn" href="#order-sec"> এখানে অর্ডার করুন </a>
+                        <p>✔️ অকাল বা’র্ধক্য রোধে অত্যন্ত কার্যকর ভূমিকা রাখে।</p> --}}
+                        <div class="btn-column" style="margin-top:0px;">
+                            <a class="order-btn" href="#order-sec"> পরিবারকে সুস্থ রাখতে অর্ডার করুন </a>
                         </div>
                     </div>
                 </div>
@@ -159,7 +159,7 @@
     <!--///////-sefty-device-section-End-///////-->
 
     <!--///////-DELEVERY-section-START-///////-->
-    <div class="delevery-charg-section">
+    {{-- <div class="delevery-charg-section">
         <div class="container">
             <div class="main">
                 <h2 class="title">ডেলিভারি চার্জ</h2>
@@ -174,7 +174,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> --}}
     <!--///////-DELEVERY-section-End-///////-->
 
     <!--///////-why-choose-section-START-///////-->
@@ -197,7 +197,7 @@
             </div>
         </div>
         <div class="btn-column">
-            <a class="order-btn" href="#order-sec">এখানে অর্ডার করুন </a>
+            <a class="order-btn" href="#order-sec">পরিবারকে সুস্থ রাখতে অর্ডার করুন </a>
         </div>
     </div>
     <!--///////-why-choose-section-End-///////-->
