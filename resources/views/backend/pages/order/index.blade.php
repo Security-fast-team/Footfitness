@@ -29,6 +29,7 @@
                             <h4>View Order</h4>
                         </span>
                         <span class="float-right">
+                            <span class="btn btn-info" id="excel">Save as Excel file</span>
                             <a href="{{ route('order.trash') }}" class="btn btn-danger">View Trash</a>
                         </span>
                     </div>
@@ -42,11 +43,9 @@
                                         <th>Order No.</th>
                                         <th>Name</th>
                                         <th>phone</th>
-                                        {{--<th>Address</th>--}}
-                                        <th>Proudct Title</th>
-                                        <th>Qty</th>
-                                        {{--<th>Shipping</th>
-                                        <th>Total Amount</th>--}}
+                                        <th>Address</th>
+                                        <th>Shipping</th>
+                                        <th>Total Amount</th>
                                         <th>Ordered Date</th>
                                         <th>Status</th>
                                         <th>Action</th>
@@ -66,22 +65,11 @@
                                             <td class="align-middle">{{ $order->order_number }}</td>
                                             <td class="align-middle">{{ $order->name }}</td>
                                             <td class="align-middle">{{ $order->phone }}</td>
-                                            {{--<td class="align-middle">{{ $order->address }}</td>--}}
-                                            <td class="align-middle">
-
-                                                @foreach ($single_collection as $i => $n)
-                                                    {{ $i != 0 ? '|' : '' }} {{ $n->product->title }}
-                                                @endforeach
-                                            </td>
-                                            <td class="align-middle">{{ $order->toalQty() }}</td>
-
-                                            {{--<td class="align-middle">
-                                                {{ $order->shipping->type . '(' . $order->shipping->price . ')৳' }}</td>
-                                            <td class="align-middle">{{ $order->total() }}</td>--}}
-                                            {{-- <td>{{ $order->quantity->payment_method ?? 'Cash on Delivery' }} --}}
-                                            </td>
-                                            {{-- <td>{{ $order->payment_number }}</td> --}}
-                                            {{-- <td>{{ $order->pamyment_method}}</td> --}}
+                                            <td class="align-middle">{!! $order->address !!}</td>
+                                            @if ($order->shipping)
+                                                <td class="align-middle">{{ $order->shipping->type . '(৳' . Number_format($order->shipping->price) . ')' }}</td>
+                                                <td class="align-middle">৳{{ Number_format($price+$order->shipping->price) }}</td>
+                                            @endif
                                             <td class="align-middle">{{ date('d-m-Y', strtotime($order->created_at)) }}
                                             </td>
                                             <td class="align-middle">
@@ -111,9 +99,9 @@
                                                         class="btn btn-dark btnEdit" title="Edit"><i
                                                             class="fas fa-edit"></i></a> --}}
 
-                                                    <a href="{{ route('order.view', $order->order_number) }}"
+                                                    {{-- <a href="{{ route('order.view', $order->order_number) }}"
                                                         class="btn btn-info view-btn" title="View Order Details"><i
-                                                            class="fas fa-eye"></i></a>
+                                                            class="fas fa-eye"></i></a> --}}
                                                     <a href="{{ route('order.delete', $order->id) }}"
                                                         class="btn btn-danger btnDelete" title="Move to trash"><i
                                                             class="fas fa-trash"></i></a>
@@ -139,27 +127,35 @@
 @push('third_party_scripts')
     <script src="{{ asset('assets/backend/js/DataTable/datatables.min.js') }}"></script>
     <script src="https://www.jqueryscript.net/demo/Dialog-Modal-Dialogify/dist/dialogify.min.js"></script>
+    <script src="{{asset('assets/backend/js/exel/exel.js')}}"></script>
 @endpush
 
 @push('page_scripts')
     <script>
         $(document).ready(function() {
+
+            // Save as excel file
+            var table2excel = new Table2Excel();
+            $('#excel').on('click',function(){
+                table2excel.export(document.querySelectorAll("table"));
+            });
+
             $('#table').DataTable({
                 dom: 'Bfrtip',
                 buttons: [{
                         extend: 'pdfHtml5',
-                        title: 'District Management',
+                        title: 'Order Management',
                         download: 'open',
                         orientation: 'potrait',
                         pagesize: 'LETTER',
                         exportOptions: {
-                            columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                            columns: [0, 1, 2, 3, 4, 5, 6, 7]
                         }
                     },
                     {
                         extend: 'print',
                         exportOptions: {
-                            columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10]
+                            columns: [0, 1, 2, 3, 4, 5, 6, 7]
                         }
                     }, 'pageLength'
                 ]

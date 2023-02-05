@@ -31,5 +31,7 @@ class AppServiceProvider extends ServiceProvider
        $site_contact_info = CompanyContact::first();
         view()->share('site_info',$site_info);
         view()->share('site_contact_info',$site_contact_info);
+        view()->share('price','2990');
+        view()->share('with_dis','3990');
     }
 }
