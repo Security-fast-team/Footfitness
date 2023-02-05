@@ -4,6 +4,6 @@ docker-compose.override.yml
 Homestead.json
 Homestead.yaml
 /.vscode
-/public
+/public/images
 .env
 .htaccess
