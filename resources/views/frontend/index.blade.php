@@ -137,7 +137,7 @@
             <div class="sefty-device-main box-shadow border border-ra">
                 <div class="flex-column">
                     <div class="product-column">
-                        <img class="sefty-device-img" src="{{ asset('images/ingredients-05.jpg') }}" alt="sefty-device">
+                        <img class="sefty-device-img" src="{{ asset('images/1.jpg') }}" alt="sefty-device">
                     </div>
                     <div class="product-details-column">
                         <h2>Honey Nuts - <span>মধুময় বাদাম</span>
