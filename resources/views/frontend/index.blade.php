@@ -10,9 +10,11 @@
             <div class="header-main-column">
                 <h1 class="header-title"><span>যারা নিজের এবং পরিবারের সুস্বাস্থ্যের জন্য নিয়মিত ফলমূল-শাকসবজি খান,</span>
                     তাদের জন্য
-                    অত্যন্ত কার্যকরী একটি ডিভাইস</h1>
+                    <span class="hlight">অত্যন্ত কার্যকরী একটি ডিভাইস</span>
+                </h1>
             </div>
-            <h2 class="extra-title"><span>কোন রকম স্বাদ ও মানের পরিবর্তন ছাড়াই মাত্র ১০ মিনিটে</span> ফলমূল-শাকসবজি থেকে সকল প্রকার
+            <h2 class="extra-title"><span>কোন রকম স্বাদ ও মানের পরিবর্তন ছাড়াই মাত্র ৮ মিনিটে</span> ফলমূল-শাকসবজি থেকে সকল
+                প্রকার
                 ক্ষতিকারক <span>ফরমালিন/প্রিজারভেটিভস দূর করে গ্যারান্টি সহকারে</span> </h2>
 
         </div>
@@ -25,7 +27,9 @@
     <div class="video-section">
         <div class="container">
             <div class="video-main-column">
-                <h2 class="video-title">মধুময় বাদাম এর উপকারিতা জানতে <span>নিচের সম্পূর্ণ ভিডিও দেখুন..</span></h2>
+                <h2 class="video-title">
+                    {{-- মধুময় বাদাম এর উপকারিতা জানতে <span>নিচের সম্পূর্ণ ভিডিও দেখুন..</span> --}}
+                </h2>
                 <div class="video-column">
                     <iframe width="560" height="315" src="https://www.youtube.com/embed/QvbuDAaaQ6Y"
                         title="YouTube video player" frameborder="0"
@@ -43,12 +47,22 @@
     <div class="service-section ">
         {{-- <div class="container"> --}}
         <div class="btn-column" style="margin-top: 15px">
-            <a class="order-btn" href="#order-sec">এখানে অর্ডার করুন </a>
+            <a class="order-btn" href="#order-sec">পরিবারকে সুস্থ রাখতে অর্ডার করুন </a>
         </div>
         <div class="service-main-column bg-s">
+
             <div class="service-title bg-color">
                 <h2 class="white">
-                    মধুময় বাদামে রয়েছে উন্নতমানের <span>৩৬ টি উপাদান,</span></h2>
+                    ভেজাল খাদ্য গ্রহণের ফলে দেশে প্রতি বছর প্রায় ৩ লাখ লোক ক্যান্সারে আক্রান্ত হচ্ছে। ডায়াবেটিস আক্রান্তের
+                    সংখ্যা ১ লাখ ৫০ হাজার, কিডনি রোগে আক্রান্তের সংখ্যা ২ লাখ। এ ছাড়া গর্ভবতী মায়ের শারীরিক জটিলতাসহ গর্ভজাত
+                    বিকলাঙ্গ শিশুর সংখ্যা দেশে প্রায় ১৫ লাখ।
+                </h2>
+            </div>
+
+            <div class="service-title bg-color">
+                <h2 class="white">
+                    কেন আপনার এই <span class="hlight">পিউরিফায়ার ডিভাইসটি</span> ব্যাবহার করা উচিৎ
+                </h2>
             </div>
 
             {{-- clsess have to remove flex-column  --}}
@@ -58,7 +72,10 @@
                         <div class="service-img">
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
                         </div>
-                        <h2> কাজুবাদাম</h2>
+                        <h2>
+                            এর Deep Purification সিস্টেম ৯৯% এরও বেশি জীবাণু, কেমিক্যাল এবং ফরমালিনসহ সব ধরণের ক্ষতিকারক
+                            উপাদান দূর করতে সক্ষম খাবারের কোন প্রকার স্বাদ পরিবর্তন করা ছাড়াই.
+                        </h2>
                     </div>
                 </div>
 
@@ -67,7 +84,8 @@
                         <div class="service-img">
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
                         </div>
-                        <h2> কাঠবাদাম</h2>
+                        <h2> FRUITS & VEGETABLE PURIFIER ক্যাপসুল ডিভাইসটি আপনার পরিবারকে খাবার পরিষ্কার করার ক্লান্তিকর কাজ
+                            থেকে দিবে, সময় বাঁচিয়ে পরিবার এবং স্বাস্থ্যের প্রতি আরও যত্নশীল হতে সাহায্য করবে</h2>
                     </div>
                 </div>
 
@@ -77,27 +95,8 @@
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
                         </div>
                         <h2>
-                            পেস্তা বাদাম
-                        </h2>
-                    </div>
-                </div>
-
-                <div class="service-single-column col-md-6">
-                    <div class="content">
-                        <div class="service-img">
-                            <i class="fa-sharp fa-solid fa-circle-check"></i>
-                        </div>
-                        <h2> আখরোট</h2>
-                    </div>
-                </div>
-
-                <div class="service-single-column col-md-6">
-                    <div class="content">
-                        <div class="service-img">
-                            <i class="fa-sharp fa-solid fa-circle-check"></i>
-                        </div>
-                        <h2>
-                            ড্রাই ম্যাংগো লাল
+                            অতিরিক্ত প্রিজারভেটিভস সেবনের ফলে শারীরিক ক্ষতি করতে পারে। এটি ক্যান্সারের অন্যতম কারণ। এই
+                            FRUITS & VEGETABLE PURIFIER ডিভাইসটি ব্যবহার করার পরে, আপনি অনেকটাই নিরাপদ বোধ করবেন
                         </h2>
                     </div>
                 </div>
@@ -108,105 +107,21 @@
                             <i class="fa-sharp fa-solid fa-circle-check"></i>
                         </div>
                         <h2>
-                            রক মেলন
+                            সাধারণ পানি, ভিনেগার, সোডা দিয়ে ফলমূল ভিজিয়ে রেখে ফরমালিন/প্রিজারভেটিভস দূর করা সময় সাপেক্ষ
+                            ব্যাপার যা এই ডিভাইসটি করে দিবে মাত্র ১০ মিনিটে সম্পূর্ণ আধুনিক পদ্দতিতে
                         </h2>
                     </div>
                 </div>
-
-                <div class="service-single-column col-md-6">
-                    <div class="content">
-                        <div class="service-img">
-                            <i class="fa-sharp fa-solid fa-circle-check"></i>
-                        </div>
-                        <h2> পামেলো</h2>
-                    </div>
-                </div>
-
-                <div class="service-single-column col-md-6">
-                    <div class="content">
-                        <div class="service-img">
-                            <i class="fa-sharp fa-solid fa-circle-check"></i>
-                        </div>
-                        <h2>
-                            কাল সাকুরা
-                        </h2>
-                    </div>
-                </div>
-
-                <div class="service-single-column col-md-6">
-                    <div class="content">
-                        <div class="service-img">
-                            <i class="fa-sharp fa-solid fa-circle-check"></i>
-                        </div>
-                        <h2>
-                            লাল সাকুরা
-                        </h2>
-                    </div>
-                </div>
-
-                <div class="service-single-column col-md-6">
-                    <div class="content">
-                        <div class="service-img">
-                            <i class="fa-sharp fa-solid fa-circle-check"></i>
-                        </div>
-                        <h2>
-                            ড্রাই ম্যাংগো হলুদ
-                        </h2>
-                    </div>
-                </div>
-
-                <div class="service-single-column col-md-6">
-                    <div class="content">
-                        <div class="service-img">
-                            <i class="fa-sharp fa-solid fa-circle-check"></i>
-                        </div>
-                        <h2>
-                            চেরি টমেটো
-                        </h2>
-                    </div>
-                </div>
-
-                <div class="service-single-column col-md-6">
-                    <div class="content">
-                        <div class="service-img">
-                            <i class="fa-sharp fa-solid fa-circle-check"></i>
-                        </div>
-                        <h2> চিনাবাদাম</h2>
-                    </div>
-                </div>
-
-                <div class="service-single-column col-md-6">
-                    <div class="content">
-                        <div class="service-img">
-                            <i class="fa-sharp fa-solid fa-circle-check"></i>
-                        </div>
-                        <h2>
-                            গোল্ডেন কিসমিস
-                        </h2>
-                    </div>
-                </div>
-
-                <div class="service-single-column col-md-6">
-                    <div class="content">
-                        <div class="service-img">
-                            <i class="fa-sharp fa-solid fa-circle-check"></i>
-                        </div>
-                        <h2>
-                            কালো কিসমিস
-                        </h2>
-                    </div>
-                </div>
-
-                <div class="service-single-column col-md-6">
-                    <div class="content">
-                        <div class="service-img">
-                            <i class="fa-sharp fa-solid fa-circle-check"></i>
-                        </div>
-                        <h2>
-                            ড্রাই আলুবোখারা
-                        </h2>
-                    </div>
-                </div>
+            </div>
+            <div class="div-btn">
+                <span>ব্যবহারের নিয়ম</span>
+            </div>
+            <div class="service-title bg-color">
+                <h2 class="white">
+                    এই FRUITS & VEGETABLE PURIFIER ডিভাইসটি বালতি বা বউলে ৩ লিটার পানি নিয়ে আপনার ফলমূল কিংবা শাকসবজির সাথে
+                    ডুবিয়ে রেখে দিন ১০ মিনিটের জন্য। ১০ মিনিট পর ডিভাইসটি অটোমেটিক্যালি বন্ধ হয়ে যাবে। যদি পানি এবং ফলমূল
+                    কিংবা শাকসবজির পরিমান বেশি হয় তাহলে ২-৩ বার ডিভাইসটি অন করে পুনরায় পানির মধ্যে ছেড়ে দিন।
+                </h2>
             </div>
         </div>
         {{-- </div> --}}
@@ -334,7 +249,7 @@
                                             <td><span><img src="img/product-img01.jpg" alt=""></span><span>মধুময়
                                                     বাদাম ৫০০ গ্রাম।</span></td>
                                             <td>
-                                                <h3><span>x1</span>{{$price}}</h3>
+                                                <h3><span>x1</span>{{ $price }}</h3>
                                             </td>
                                         </tr>
                                         <tr class="total-bill">
@@ -343,7 +258,7 @@
                                                 <h4>Shipping</h4>
                                             </td>
                                             <td>
-                                                <h4><span>৳</span><span id="sub-total">{{$price}}</span></h4>
+                                                <h4><span>৳</span><span id="sub-total">{{ $price }}</span></h4>
                                                 @foreach ($shipping as $key => $ship)
                                                     <input type="radio" id="html{{ $ship->id }}" class="shipping"
                                                         data-price="{{ $ship->price }}" name="shipping_id"
@@ -360,7 +275,8 @@
                                                 <h3>Total</h3>
                                             </td>
                                             <td>
-                                                <h3><span>৳</span><span class="total-bills">{{$price}}</span></h3>
+                                                <h3><span>৳</span><span class="total-bills">{{ $price }}</span>
+                                                </h3>
                                             </td>
                                         </tr>
                                     </tbody>
