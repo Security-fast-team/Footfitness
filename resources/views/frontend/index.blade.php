@@ -183,7 +183,7 @@
         <div class="container">
             <div class="main">
                 <h2 class="title">
-                    কেন আমাদের পন্যটাই <span>অর্ডার করবেন ?</span></h2>
+                    কেন আমাদের পন্যটাই <span>অর্ডার <br> করবেন ?</span></h2>
                 <div class="flex-column why-order">
                     <div class="left-col">
                         <h2> ১. আমাদের পেজ এবং গ্রুপে পাবেন এই মধুময় বাদাম এর শতশত পজেটিভ রিভিউ আলহামদুলিল্লাহ, যারা হাতে
@@ -247,8 +247,8 @@
                                     </thead>
                                     <tbody class="order-details">
                                         <tr class="order-product">
-                                            <td><span><img src="img/product-img01.jpg" alt=""></span><span>মধুময়
-                                                    বাদাম ৫০০ গ্রাম।</span></td>
+                                            <td><span><img src="img/product-img01.jpg" alt=""></span><span>
+                                                     ৫০০ গ্রাম।</span></td>
                                             <td>
                                                 <h3><span>x1</span>{{ $price }}</h3>
                                             </td>
