@@ -53,7 +53,7 @@
         <div class="service-main-column bg-s">
 
             <div class="service-title bg-color">
-                <h2 class="" style="color: black;font-size: 18px">
+                <h2 class="" style="color: black;font-size: 19px; text-align: justify; padding: 0px 10px;">
                     ভেজাল খাদ্য গ্রহণের ফলে দেশে প্রতি বছর প্রায় ৩ লাখ লোক ক্যান্সারে আক্রান্ত হচ্ছে। ডায়াবেটিস আক্রান্তের
                     সংখ্যা ১ লাখ ৫০ হাজার, কিডনি রোগে আক্রান্তের সংখ্যা ২ লাখ। এ ছাড়া গর্ভবতী মায়ের শারীরিক জটিলতাসহ গর্ভজাত
                     বিকলাঙ্গ শিশুর সংখ্যা দেশে প্রায় ১৫ লাখ।
