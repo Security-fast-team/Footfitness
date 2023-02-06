@@ -221,7 +221,7 @@
             <tr>
                 <td>{{$order->order_number}}</td>
                 <td>{{date('d-m-Y', strtotime($order->created_at))}}</td>
-                <td>৳ {{$order->price + $order->shipping->price}}</td>
+                <td>৳ {{$order->price}}</td>
                 <td>Cash on delivery</td>
             </tr>
           </table>
