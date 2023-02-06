@@ -221,7 +221,7 @@
             <tr>
                 <td>{{$order->order_number}}</td>
                 <td>{{date('d-m-Y', strtotime($order->created_at))}}</td>
-                <td>৳ {{$order->price}}</td>
+                <td>৳ {{$price}}</td>
                 <td>Cash on delivery</td>
             </tr>
           </table>
@@ -231,17 +231,4 @@
     </div>
   </div>
 
-  <!-- footer-section -->
-  {{-- <footer>
-    <div class="footer-section">
-      <div class="container">
-        <div class="main">
-          <p>
-            All Rights Reserved <span>Prime Gadget</span> | Designed And developed by <span>Security First</span> | Powdered by
-            <span>Designed and developed by e-Business Clinic</span>
-          </p>
-        </div>
-      </div>
-    </div>
-  </footer> --}}
 @endsection
