@@ -24,7 +24,7 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $orders=Order::with(['shipping','product'])->orderBy('id','DESC')->where('status','active')->get()->groupBy('order_number');
+        $orders=Order::with(['shipping'])->orderBy('id','DESC')->where('status','active')->get()->groupBy('order_number');
         return view('backend.pages.order.index')->with('orders',$orders);
     }
 

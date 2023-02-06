@@ -32,9 +32,9 @@
                                         <th>S.N.</th>
                                         <th>Order No.</th>
                                         <th>Name</th>
-                                        <th>phone</th>
-                                        <th>Shiping Charge</th>
-                                        <th>Total Amount(BDT)</th>
+                                        <th>Phone</th>
+                                        <th>Address</th>
+                                        <th>Price</th>
                                         <th>Deleted At</th>
                                         <th>Status</th>
                                         <th>Action</th>
@@ -47,10 +47,12 @@
                                             <td>{{ $order->order_number }}</td>
                                             <td>{{ $order->name }}</td>
                                             <td>{{ $order->phone }}</td>
-                                            @if ($order->shipping)
+                                            <td>{!! $order->address !!}</td>
+                                            <td>{{ $price}}</td>
+                                            {{-- @if ($order->shipping)
                                                 <td class="align-middle">{{ $order->shipping->type . '(৳' . Number_format($order->shipping->price) . ')' }}</td>
                                                 <td class="align-middle">৳{{ Number_format($price+$order->shipping->price) }}</td>
-                                            @endif
+                                            @endif --}}
                                             </td>
                                             <td>{{$order->updated_at->diffForHumans()}}</td>
                                             <td>

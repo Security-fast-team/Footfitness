@@ -44,8 +44,7 @@
                                         <th>Name</th>
                                         <th>phone</th>
                                         <th>Address</th>
-                                        <th>Shipping</th>
-                                        <th>Total Amount</th>
+                                        <th>Price</th>
                                         <th>Ordered Date</th>
                                         <th>Status</th>
                                         <th>Action</th>
@@ -66,10 +65,11 @@
                                             <td class="align-middle">{{ $order->name }}</td>
                                             <td class="align-middle">{{ $order->phone }}</td>
                                             <td class="align-middle">{!! $order->address !!}</td>
-                                            @if ($order->shipping)
+                                            <td class="align-middle">{!! $price !!}</td>
+                                            {{-- @if ($order->shipping)
                                                 <td class="align-middle">{{ $order->shipping->type . '(৳' . Number_format($order->shipping->price) . ')' }}</td>
                                                 <td class="align-middle">৳{{ Number_format($price+$order->shipping->price) }}</td>
-                                            @endif
+                                            @endif --}}
                                             <td class="align-middle">{{ date('d-m-Y', strtotime($order->created_at)) }}
                                             </td>
                                             <td class="align-middle">
