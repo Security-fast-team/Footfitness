@@ -214,6 +214,7 @@ animation-iteration-count: infinite;
 }
 .service-section .service-single-column:hover{
     background: #10F418;
+    color: red !important;
 }
 .service-section .service-single-column .content{
     text-align: center;

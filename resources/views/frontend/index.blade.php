@@ -313,7 +313,6 @@
     <script>
         $(document).ready(function() {
             let sub_total = Number($('#sub-total').text());
-
             // $('.shipping:eq(0)').on('click',function(){
             let shipping_price = Number($('.shipping:eq(0)').attr('data-price'));
             $('.total-bills').html(shipping_price + sub_total);
@@ -323,6 +322,18 @@
             $('.shipping').on('click', function() {
                 let shipping_price = Number($(this).attr('data-price'));
                 $('.total-bills').html(shipping_price + sub_total);
+            })
+            let bg = true;
+            $('.service-section .service-single-column').hover(function(){
+                if(bg){
+                    $(this).css({backgroundColor:'white'})
+                    $(this).find('h2').css({color:'red'});
+                    bg = false;
+                }else{
+                    $(this).css({backgroundColor:'red'})
+                    $(this).find('h2').css({color:'white'});
+                    bg = true;
+                }
             })
 
         });
