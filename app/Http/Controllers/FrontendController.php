@@ -11,6 +11,7 @@ use App\Models\Shipping;
 use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Artisan;
 
 class FrontendController extends Controller
 {
