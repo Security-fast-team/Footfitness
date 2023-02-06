@@ -168,7 +168,7 @@ animation-iteration-count: infinite;
     content: "";
     position: absolute;
     background-image: url("../img/Wave.svg");
-    width: calc(100% + 218px);
+    width: calc(100%);
     height: 222px;
     background-repeat: no-repeat;
     background-position: center;
