@@ -150,8 +150,11 @@
                         <p>✔️ যারা শরী’র ফি’ট রাখতে চান তাদের জন্য খুবই উ’পকারী</p>
                         <p>✔️ স্মৃতিশক্তি বৃদ্ধি করে এবং তীক্ষ্ণ মেধা সম্পন্ন হতে সাহায্য করে।</p>
                         <p>✔️ অকাল বা’র্ধক্য রোধে অত্যন্ত কার্যকর ভূমিকা রাখে।</p> --}}
-                        <div class="btn-column animation-pulse" style="margin-top:0px;">
-                            <a class="order-btn" href="#order-sec"> পরিবারকে সুস্থ রাখতে অর্ডার করুন </a>
+                        <div class="btn-column animation-pulse" style="width: 100% !important;
+                        margin: 0px !important;">
+                            <a class="order-btn" href="#order-sec" style="width: 100% !important;
+                            padding: 6px 19px !important;
+                            margin: 0px !important;"> পরিবারকে সুস্থ রাখতে অর্ডার করুন </a>
                         </div>
                     </div>
                 </div>
