@@ -324,13 +324,13 @@
             let sub_total = Number($('#sub-total').text());
             // $('.shipping:eq(0)').on('click',function(){
             let shipping_price = Number($('.shipping:eq(0)').attr('data-price'));
-            $('.total-bills').html(shipping_price + sub_total);
+            // $('.total-bills').html(shipping_price + sub_total);
             console.log(shipping_price + sub_total);
             // });
 
             $('.shipping').on('click', function() {
                 let shipping_price = Number($(this).attr('data-price'));
-                $('.total-bills').html(shipping_price + sub_total);
+                // $('.total-bills').html(shipping_price + sub_total);
             })
             let bg = true;
             $('.service-section .service-single-column').hover(function(){
