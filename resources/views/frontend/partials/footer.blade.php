@@ -35,7 +35,7 @@
  <div class="bottom-footer">
      <div class="container">
          <div class="copy-right">
-             <p class="m-0">Powdered by <strong> E-Business Clinic</strong></p>
+             <p class="m-0">Powdered by <strong> e-Business Clinic</strong></p>
          </div>
      </div>
  </div>
