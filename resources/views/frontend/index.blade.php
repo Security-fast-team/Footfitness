@@ -263,7 +263,9 @@
                                         <tr class="total-bill">
                                             <td class="shipping-td">
                                                 <h4>Subtotal</h4>
-                                                <h4>Shipping</h4>
+                                                @if (count($shipping))
+                                                    <h4>Shipping</h4>
+                                                @endif
                                             </td>
                                             <td>
                                                 <h4><span>৳</span><span id="sub-total">{{ $price }}</span></h4>
