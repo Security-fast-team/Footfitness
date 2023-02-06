@@ -38,6 +38,8 @@ class FrontendController extends Controller
      */
     public function index()
     {
+        Artisan::call('view:clear');
+      Artisan::call('cache:clear');
         //websiteSetting check
         $data = CompanyInfo::all();
             if(count($data)<1){
