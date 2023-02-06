@@ -571,6 +571,9 @@ animation-iteration-count: infinite;
     background: #0D7E73;
     padding: 30px 0;
 }
+.mobile-br{
+display: none;
+}
 .footer-section ul{
     list-style: none;
 }
@@ -726,6 +729,9 @@ animation-iteration-count: infinite;
     .order-section .billing-details-column .billing-form {
     width: 95%;
     margin: 0 auto;
+    }
+    .mobile-br{
+        display: block !important;
     }
     .order-section .your-order-column {
         width: 95%;

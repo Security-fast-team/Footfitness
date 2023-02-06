@@ -183,7 +183,7 @@
         <div class="container">
             <div class="main">
                 <h2 class="title">
-                    কেন আমাদের পন্যটাই <span>অর্ডার <br> করবেন ?</span></h2>
+                    কেন আমাদের পন্যটাই <span>অর্ডার <br class="mobile-br"> করবেন ?</span></h2>
                 <div class="flex-column why-order">
                     <div class="left-col">
                         <h2> ১. আমাদের পেজ এবং গ্রুপে পাবেন এই মধুময় বাদাম এর শতশত পজেটিভ রিভিউ আলহামদুলিল্লাহ, যারা হাতে
