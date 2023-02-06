@@ -93,6 +93,7 @@ animation-iteration-count: infinite;
     font-weight: 600;
     text-align: center;
     color: white;
+    line-height: 57px;
 }
 .header-section .extra-title{
     color: #090909;
@@ -124,13 +125,16 @@ animation-iteration-count: infinite;
                                         /*=======video-section start=========*/
 
 .video-section{
-    padding: 20px 0;
+
+}
+.video-section .video-main-column{
+    padding: 20px 20px;
     background-color: white;
     box-shadow: 0px 6px 10px 0px rgba(0,0,0,0.5);
     border-style: solid;
     border-width: 2px 2px 2px 2px;
     border-color: #05A400;
-    border-radius: 2%;
+    border-radius: 25px;
 }
 .video-section .video-title{
     text-align: center;
@@ -278,7 +282,7 @@ animation-iteration-count: infinite;
 .why-choose-section{
     padding-bottom: 30px;
 }
- .why-choose-section .container{
+ .why-choose-section .main{
     background: #416D4A;
     padding: 30px 0;
     border-radius: 10px;
@@ -382,12 +386,11 @@ animation-iteration-count: infinite;
     line-height: 39px;
     padding-bottom: 25px;
 }
-.order-section .container{
+.order-section .order-main{
     border: 2px solid #076c07;
     border-top: 18px solid #076c07;
     border-radius: 35px;
-   padding-top: 40px;
-   padding-bottom: 40px;
+   padding: 40px 15px;
 }
 .order-section .billing-details-column{
     width: 60%;
@@ -674,7 +677,6 @@ animation-iteration-count: infinite;
 
     .container{
         padding: 0 8px;
-        padding-left: 19px
     }
     .btn-column .order-btn{
         font-size: 17px;
@@ -744,5 +746,12 @@ animation-iteration-count: infinite;
 @media only screen and (max-width: 380px){
     .order-section .your-order-column td:nth-child(2n+1) {
         width: 60%;
+    }
+    .order-section .order-main {
+        padding: 25px 10px;
+    }
+    .order-section .order-title {
+        font-size: 22px;
+        line-height: 32px;
     }
 }
