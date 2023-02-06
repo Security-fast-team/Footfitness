@@ -47,22 +47,22 @@
 
     <div class="service-section ">
         {{-- <div class="container"> --}}
-        <div class="btn-column" style="margin-top: 15px">
+        <div class="btn-column animation-pulse" style="margin-top: 15px">
             <a class="order-btn" href="#order-sec">পরিবারকে সুস্থ রাখতে অর্ডার করুন </a>
         </div>
         <div class="service-main-column bg-s">
 
             <div class="service-title bg-color">
-                <h2 class="white">
+                <h2 class="" style="color: black;font-size: 18px">
                     ভেজাল খাদ্য গ্রহণের ফলে দেশে প্রতি বছর প্রায় ৩ লাখ লোক ক্যান্সারে আক্রান্ত হচ্ছে। ডায়াবেটিস আক্রান্তের
                     সংখ্যা ১ লাখ ৫০ হাজার, কিডনি রোগে আক্রান্তের সংখ্যা ২ লাখ। এ ছাড়া গর্ভবতী মায়ের শারীরিক জটিলতাসহ গর্ভজাত
                     বিকলাঙ্গ শিশুর সংখ্যা দেশে প্রায় ১৫ লাখ।
                 </h2>
             </div>
 
-            <div class="service-title bg-color">
-                <h2 class="white">
-                    কেন আপনার এই <span class="hlight">পিউরিফায়ার ডিভাইসটি</span> ব্যাবহার করা উচিৎ
+            <div class="service-title">
+                <h2 class="" style="background: white; color:black;">
+                    কেন আপনার এই <span class="" style="color: blue">পিউরিফায়ার ডিভাইসটি</span> ব্যাবহার করা উচিৎ
                 </h2>
             </div>
 
@@ -118,10 +118,11 @@
                 <span>ব্যবহারের নিয়ম</span>
             </div>
             <div class="service-title bg-color">
-                <h2 class="white">
-                    এই FRUITS & VEGETABLE PURIFIER ডিভাইসটি বালতি বা বউলে ৩ লিটার পানি নিয়ে আপনার ফলমূল কিংবা শাকসবজির সাথে
-                    ডুবিয়ে রেখে দিন ১০ মিনিটের জন্য। ১০ মিনিট পর ডিভাইসটি অটোমেটিক্যালি বন্ধ হয়ে যাবে। যদি পানি এবং ফলমূল
-                    কিংবা শাকসবজির পরিমান বেশি হয় তাহলে ২-৩ বার ডিভাইসটি অন করে পুনরায় পানির মধ্যে ছেড়ে দিন।
+                <h2 class="" style="color:black; font-size: 17px; text-align:justify; padding:5px">
+                    <span style="background: red">✔️</span> এই FRUITS & VEGETABLE PURIFIER ডিভাইসটি বালতি বা বউলে ৩ লিটার পানি নিয়ে আপনার ফলমূল কিংবা শাকসবজির সাথে
+                    ডুবিয়ে রেখে দিন ১০ মিনিটের জন্য<br><br>
+                    <span style="background: red">✔️</span>১০ মিনিট পর ডিভাইসটি অটোমেটিক্যালি বন্ধ হয়ে যাবে।
+                     যদি পানি এবং ফলমূলকিংবা শাকসবজির পরিমান বেশি হয় তাহলে ২-৩ বার ডিভাইসটি অন করে পুনরায় পানির মধ্যে ছেড়ে দিন।
                 </h2>
             </div>
         </div>
@@ -149,7 +150,7 @@
                         <p>✔️ যারা শরী’র ফি’ট রাখতে চান তাদের জন্য খুবই উ’পকারী</p>
                         <p>✔️ স্মৃতিশক্তি বৃদ্ধি করে এবং তীক্ষ্ণ মেধা সম্পন্ন হতে সাহায্য করে।</p>
                         <p>✔️ অকাল বা’র্ধক্য রোধে অত্যন্ত কার্যকর ভূমিকা রাখে।</p> --}}
-                        <div class="btn-column" style="margin-top:0px;">
+                        <div class="btn-column animation-pulse" style="margin-top:0px;">
                             <a class="order-btn" href="#order-sec"> পরিবারকে সুস্থ রাখতে অর্ডার করুন </a>
                         </div>
                     </div>
@@ -177,7 +178,7 @@
         </div>
     </div> --}}
     <div class="btn-column" style="margin-top:0px;">
-        <span class="delivery-free"><span class="text-yellow">ডেলিভারি চার্জ ফ্রি</span> <br> পন্য হাতে পেয়ে মুল্য পরিশোধ</span>
+        <span class="delivery-free animation-pulse"><span class="text-yellow">ডেলিভারি চার্জ ফ্রি</span> <br> পন্য হাতে পেয়ে মুল্য পরিশোধ</span>
     </div>
     <!--///////-DELEVERY-section-End-///////-->
 
@@ -189,7 +190,7 @@
                     কেন আমাদের পন্যটাই <span>অর্ডার <br class="mobile-br"> করবেন ?</span></h2>
                 <div class="flex-column why-order">
                     <div class="left-col">
-                        <h2> ১. আমাদের পেজ এবং গ্রুপে পাবেন এই মধুময় বাদাম এর শতশত পজেটিভ রিভিউ আলহামদুলিল্লাহ, যারা হাতে
+                        <h2> ১. আমাদের পেজ এবং গ্রুপে পাবেন এই পিউরিফায়ার ডিভাইসটির শতশত পজেটিভ রিভিউ আলহামদুলিল্লাহ, যারা হাতে
                             পেয়ে চেক করে খেয়ে রিভিউগুলো দিয়েছেন।</h2>
                     </div>
                     <div class="left-col option2">
@@ -200,7 +201,7 @@
                 </div>
             </div>
         </div>
-        <div class="btn-column">
+        <div class="btn-column animation-pulse">
             <a class="order-btn" href="#order-sec">পরিবারকে সুস্থ রাখতে অর্ডার করুন </a>
         </div>
     </div>
@@ -251,7 +252,7 @@
                                     <tbody class="order-details">
                                         <tr class="order-product">
                                             <td><span><img src="img/product-img01.jpg" alt=""></span><span>
-                                                     ৫০০ গ্রাম।</span></td>
+                                                পিউরিফায়ার ডিভাইস  </span></td>
                                             <td>
                                                 <h3><span>x1</span>{{ $price }}</h3>
                                             </td>

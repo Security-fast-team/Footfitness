@@ -12,7 +12,7 @@ a{
     text-decoration: none;
 }
 .bg-color{
-    background-color: #076c07 !important;
+    background-color: #f4e386bd !important;
 }
 .white{
     color: white !important;
@@ -82,7 +82,7 @@ animation-iteration-count: infinite;
 }
 .header-main-column{
     padding: 14px 0px 14px 0px;
-    background-color: #076c07;
+    background-color: #167ac6;
     border-style: solid;
     border-color: #FF0000;
     border-radius: 10px;
@@ -100,7 +100,7 @@ animation-iteration-count: infinite;
 .header-section .extra-title{
     color: #090909;
     font-family: "Hind Siliguri", Sans-serif;
-    font-size: 20px;
+    font-size: 19px;
     font-weight: 600;
     line-height: 30px;
     max-width: 1000px;
@@ -110,7 +110,7 @@ animation-iteration-count: infinite;
     text-decoration: underline;
 }
 .hlight{
-    color: #10F418;
+    color: #8affb3;
 }
 .div-btn {
     background: blue;
@@ -227,6 +227,7 @@ animation-iteration-count: infinite;
     line-height: 24px;
     margin-bottom: 10px;
     color: #068D0E;
+    text-align: justify;
 }
 .service-section .service-single-column .content p{
     font-size: 16px;
@@ -571,7 +572,7 @@ animation-iteration-count: infinite;
 }
 .delivery-free {
     margin-top: 0px;
-    background: green;
+    background: #167ac6;
     padding: 10px;
     font-size: 22px;
     font-weight: bolder;
@@ -700,7 +701,7 @@ display: none;
         padding: 0 8px;
     }
     .btn-column .order-btn{
-        font-size: 17px;
+        font-size: 20px;
         padding: 12px 38px;
     }
     .service-section .service-main-column .service-title {
@@ -779,3 +780,21 @@ display: none;
         line-height: 32px;
     }
 }
+
+/* Animation  */
+
+.animation-pulse{
+    animation-name:animation-pulse;
+    animation-duration: 1s;
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+
+@keyframes animation-pulse {
+    25% {
+        transform: scale(1.1);
+      }
+    75% {
+        transform: scale(0.9);
+      }
+  }
