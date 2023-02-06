@@ -35,8 +35,7 @@
  <div class="bottom-footer">
      <div class="container">
          <div class="copy-right">
-             <p class="m-0">All Rights Reserved <strong>{{ ucfirst($site_info->name) }}</strong> | Designed
-                 And developed by <strong>Security First</strong> | Powdered by <strong>Designed and developed by e-Business Clinic</strong></p>
+             <p class="m-0">Powdered by <strong> E-Business Clinic</strong></p>
          </div>
      </div>
  </div>
