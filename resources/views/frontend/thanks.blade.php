@@ -233,3 +233,34 @@
 
 @endsection
 
+@push('js')
+ {{-- Push data to google  --}}
+ <script type="text/javascript">
+    dataLayer.push({
+        ecommerce: null
+    }); // Clear the previous ecommerce object.
+    dataLayer.push({
+        event: "purchase",
+        ecommerce: {
+            transaction_id: "{{ $order->order_number }}",
+            value: "{{ $price }}",
+            shipping: "0",
+            currency: "BDT",
+            items: [
+                @foreach ($orders as $order)
+                    {
+                        item_name: "পিউরিফায়ার ডিভাইস",
+                        item_id: "{{ $order->id ?? 1}}",
+                        price: "{{ $price }}",
+                        discount: "{{ $with_dis - $price }}",
+                        item_category: "",
+                        item_variant: "",
+                        quantity: "{{ $order->quantity ?? 1 }}"
+                    },
+                @endforeach
+            ]
+        }
+    });
+</script>
+
+@endpush
