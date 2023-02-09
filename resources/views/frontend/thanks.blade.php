@@ -247,7 +247,6 @@
             shipping: "0",
             currency: "BDT",
             items: [
-                @foreach ($orders as $order)
                     {
                         item_name: "পিউরিফায়ার ডিভাইস",
                         item_id: "{{ $order->id ?? 1}}",
@@ -256,8 +255,7 @@
                         item_category: "",
                         item_variant: "",
                         quantity: "{{ $order->quantity ?? 1 }}"
-                    },
-                @endforeach
+                    }
             ]
         }
     });
