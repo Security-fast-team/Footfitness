@@ -32,10 +32,10 @@
                     পিউরিফায়ার ডিভাইসের উপকারিতা জানতে <span>নিচের ভিডিও সম্পূর্ণ দেখুন..</span>
                 </h2>
                 <div class="video-column">
-                    {{-- <iframe width="560" height="315" src="https://www.youtube.com/embed/pfV9QvqcwRY"
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pfV9QvqcwRY"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-                        allowfullscreen></iframe> --}}
+                        allowfullscreen></iframe>
 
                 </div>
             </div>
