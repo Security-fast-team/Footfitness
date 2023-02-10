@@ -29,10 +29,10 @@
         <div class="container">
             <div class="video-main-column">
                 <h2 class="video-title">
-                    {{-- মধুময় বাদাম এর উপকারিতা জানতে <span>নিচের সম্পূর্ণ ভিডিও দেখুন..</span> --}}
+                    পিউরিফায়ার ডিভাইসের উপকারিতা জানতে <span>নিচের ভিডিও সম্পূর্ণ দেখুন..</span>
                 </h2>
                 <div class="video-column">
-                    <iframe width="560" height="315" src="https://www.youtube.com/embed/QvbuDAaaQ6Y"
+                    <iframe width="560" height="315" src="https://www.youtube.com/embed/pfV9QvqcwRY"
                         title="YouTube video player" frameborder="0"
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
                         allowfullscreen></iframe>
@@ -119,10 +119,12 @@
             </div>
             <div class="service-title bg-color">
                 <h2 class="" style="color:black; font-size: 17px; text-align:justify; padding:5px">
-                    <span style="background: red">✔️</span> এই FRUITS & VEGETABLE PURIFIER ডিভাইসটি বালতি বা বউলে ৩ লিটার পানি নিয়ে আপনার ফলমূল কিংবা শাকসবজির সাথে
+                    <span style="background: red">✔️</span> এই FRUITS & VEGETABLE PURIFIER ডিভাইসটি বালতি বা বউলে ৩ লিটার
+                    পানি নিয়ে আপনার ফলমূল কিংবা শাকসবজির সাথে
                     ডুবিয়ে রেখে দিন ১০ মিনিটের জন্য<br><br>
                     <span style="background: red">✔️</span>১০ মিনিট পর ডিভাইসটি অটোমেটিক্যালি বন্ধ হয়ে যাবে।
-                     যদি পানি এবং ফলমূলকিংবা শাকসবজির পরিমান বেশি হয় তাহলে ২-৩ বার ডিভাইসটি অন করে পুনরায় পানির মধ্যে ছেড়ে দিন।
+                    যদি পানি এবং ফলমূলকিংবা শাকসবজির পরিমান বেশি হয় তাহলে ২-৩ বার ডিভাইসটি অন করে পুনরায় পানির মধ্যে ছেড়ে
+                    দিন।
                 </h2>
             </div>
         </div>
@@ -150,11 +152,14 @@
                         <p>✔️ যারা শরী’র ফি’ট রাখতে চান তাদের জন্য খুবই উ’পকারী</p>
                         <p>✔️ স্মৃতিশক্তি বৃদ্ধি করে এবং তীক্ষ্ণ মেধা সম্পন্ন হতে সাহায্য করে।</p>
                         <p>✔️ অকাল বা’র্ধক্য রোধে অত্যন্ত কার্যকর ভূমিকা রাখে।</p> --}}
-                        <div class="btn-column animation-pulse" style="width: 100% !important;
+                        <div class="btn-column animation-pulse"
+                            style="width: 100% !important;
                         margin: 0px !important;">
-                            <a class="order-btn" href="#order-sec" style="width: 100% !important;
+                            <a class="order-btn" href="#order-sec"
+                                style="width: 100% !important;
                             padding: 6px 19px !important;
-                            margin: 0px !important;"> পরিবারকে সুস্থ রাখতে অর্ডার করুন </a>
+                            margin: 0px !important;">
+                                পরিবারকে সুস্থ রাখতে অর্ডার করুন </a>
                         </div>
                     </div>
                 </div>
@@ -181,7 +186,8 @@
         </div>
     </div> --}}
     <div class="btn-column" style="margin-top:0px;">
-        <span class="delivery-free animation-pulse"><span class="text-yellow">ডেলিভারি চার্জ ফ্রি</span> <br> পন্য হাতে পেয়ে মুল্য পরিশোধ</span>
+        <span class="delivery-free animation-pulse"><span class="text-yellow">ডেলিভারি চার্জ ফ্রি</span> <br> পন্য হাতে পেয়ে
+            মুল্য পরিশোধ</span>
     </div>
     <!--///////-DELEVERY-section-End-///////-->
 
@@ -193,7 +199,8 @@
                     কেন আমাদের পন্যটাই <span>অর্ডার <br class="mobile-br"> করবেন ?</span></h2>
                 <div class="flex-column why-order">
                     <div class="left-col">
-                        <h2> ১. আমাদের পেজ এবং গ্রুপে পাবেন এই পিউরিফায়ার ডিভাইসটির শতশত পজেটিভ রিভিউ আলহামদুলিল্লাহ, যারা হাতে
+                        <h2> ১. আমাদের পেজ এবং গ্রুপে পাবেন এই পিউরিফায়ার ডিভাইসটির শতশত পজেটিভ রিভিউ আলহামদুলিল্লাহ, যারা
+                            হাতে
                             পেয়ে চেক করে খেয়ে রিভিউগুলো দিয়েছেন।</h2>
                     </div>
                     <div class="left-col option2">
@@ -255,7 +262,7 @@
                                     <tbody class="order-details">
                                         <tr class="order-product">
                                             <td><span><img src="img/product-img01.jpg" alt=""></span><span>
-                                                পিউরিফায়ার ডিভাইস  </span></td>
+                                                    পিউরিফায়ার ডিভাইস </span></td>
                                             <td>
                                                 <h3><span>x1</span>{{ $price }}</h3>
                                             </td>
@@ -333,14 +340,22 @@
                 // $('.total-bills').html(shipping_price + sub_total);
             })
             let bg = true;
-            $('.service-section .service-single-column').hover(function(){
-                if(bg){
-                    $(this).css({backgroundColor:'white'})
-                    $(this).find('h2').css({color:'red'});
+            $('.service-section .service-single-column').hover(function() {
+                if (bg) {
+                    $(this).css({
+                        backgroundColor: 'white'
+                    })
+                    $(this).find('h2').css({
+                        color: 'red'
+                    });
                     bg = false;
-                }else{
-                    $(this).css({backgroundColor:'red'})
-                    $(this).find('h2').css({color:'white'});
+                } else {
+                    $(this).css({
+                        backgroundColor: 'red'
+                    })
+                    $(this).find('h2').css({
+                        color: 'white'
+                    });
                     bg = true;
                 }
             })

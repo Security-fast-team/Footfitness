@@ -137,7 +137,6 @@ Route::group(['middleware'=>['auth']],function() {
         Route::post('/insert', [PaymentController::class, 'insert'])->name('insert');
         Route::get('/payment_delete/{id}', [PaymentController::class, 'payment_delete'])->name('payment_delete');
         Route::get('/edite/{id}', [PaymentController::class, 'edite'])->name('edite');
-        Route::post('/edite/{id}', [PaymentController::class, 'edite'])->name('edite');
         Route::post('/update/{id}', [PaymentController::class, 'update'])->name('update');
 
     });
