@@ -3,12 +3,14 @@
 namespace App\Http\Controllers;
 
 use App\Models\Category;
+use http\Client\Curl\User;
 use Illuminate\Http\Request;
 use App\Models\CompanyInfo;
 use App\Models\CompanyContact;
 use App\Models\Shipping;
 use App\Models\Product;
-
+use Illuminate\Support\Facades\Auth;
+use Illuminate\Support\Facades\DB;
 use Artisan;
 
 class FrontendController extends Controller
@@ -38,7 +40,7 @@ class FrontendController extends Controller
     public function index()
     {
         Artisan::call('view:clear');
-        Artisan::call('cache:clear');
+      Artisan::call('cache:clear');
         //websiteSetting check
         $data = CompanyInfo::all();
             if(count($data)<1){
