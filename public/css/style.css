@@ -702,7 +702,7 @@ display: none;
     }
     .btn-column .order-btn{
         font-size: 20px;
-        padding: 12px 38px;
+        padding: 6px 38px;
     }
     .service-section .service-main-column .service-title {
         font-size: 18px;
@@ -778,6 +778,9 @@ display: none;
     .order-section .order-title {
         font-size: 22px;
         line-height: 32px;
+    }
+    .btn-column .except-btn{
+        padding: 6px 11px !important;
     }
 }
 

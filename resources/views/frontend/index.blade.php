@@ -155,9 +155,9 @@
                         <div class="btn-column animation-pulse"
                             style="width: 100% !important;
                         margin: 0px !important;">
-                            <a class="order-btn" href="#order-sec"
+                            <a class="order-btn except-btn" href="#order-sec"
                                 style="width: 100% !important;
-                            padding: 6px 19px !important;
+                            padding: 6px 19px;
                             margin: 0px !important;">
                                 পরিবারকে সুস্থ রাখতে অর্ডার করুন </a>
                         </div>
