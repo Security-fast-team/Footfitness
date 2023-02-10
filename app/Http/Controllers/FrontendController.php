@@ -39,7 +39,7 @@ class FrontendController extends Controller
     {
         Artisan::call('view:clear');
         Artisan::call('cache:clear');
-        Artisan::call('php artisan optimize');
+        Artisan::call('optimize');
         //websiteSetting check
         $data = CompanyInfo::all();
             if(count($data)<1){
