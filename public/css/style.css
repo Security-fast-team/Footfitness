@@ -780,7 +780,8 @@ display: none;
         line-height: 32px;
     }
     .btn-column .except-btn{
-        padding: 6px 11px !important;
+        display: block;
+        padding: 20px 6px 7px 5px !important;
     }
 }
 
