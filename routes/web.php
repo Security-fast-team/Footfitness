@@ -1,10 +1,5 @@
 <?php
-
-use App\Http\Controllers\Payment;
 use App\Http\Controllers\PaymentController;
-use http\Client\Curl\User;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CompanyDetailsController;
