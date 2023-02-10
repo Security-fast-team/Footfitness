@@ -131,7 +131,6 @@ Route::group(['middleware'=>['auth']],function() {
 
     //Payment system
     Route::group(['as' => 'payment.', 'prefix' => 'payment'], function () {
-
         Route::get('/index', [PaymentController::class, 'index'])->name('index');
         Route::get('/create', [PaymentController::class, 'create'])->name('create');
         Route::post('/insert', [PaymentController::class, 'insert'])->name('insert');
