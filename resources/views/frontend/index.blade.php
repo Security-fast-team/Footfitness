@@ -3,8 +3,6 @@
 @endpush
 @section('page_conent')
     <!--///////-header-section-start-///////-->
-
-
     <div class="header-section">
         <div class="container">
             <div class="header-main-column">
