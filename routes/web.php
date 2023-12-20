@@ -1,10 +1,5 @@
 <?php
-
-use App\Http\Controllers\Payment;
 use App\Http\Controllers\PaymentController;
-use http\Client\Curl\User;
-use Illuminate\Support\Facades\Auth;
-use Illuminate\Support\Facades\DB;
 use Illuminate\Support\Facades\Route;
 use App\Http\Controllers\HomeController;
 use App\Http\Controllers\CompanyDetailsController;
@@ -131,13 +126,11 @@ Route::group(['middleware'=>['auth']],function() {
 
     //Payment system
     Route::group(['as' => 'payment.', 'prefix' => 'payment'], function () {
-
         Route::get('/index', [PaymentController::class, 'index'])->name('index');
         Route::get('/create', [PaymentController::class, 'create'])->name('create');
         Route::post('/insert', [PaymentController::class, 'insert'])->name('insert');
         Route::get('/payment_delete/{id}', [PaymentController::class, 'payment_delete'])->name('payment_delete');
         Route::get('/edite/{id}', [PaymentController::class, 'edite'])->name('edite');
-        Route::post('/edite/{id}', [PaymentController::class, 'edite'])->name('edite');
         Route::post('/update/{id}', [PaymentController::class, 'update'])->name('update');
 
     });

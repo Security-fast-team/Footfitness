@@ -1,6 +1,6 @@
  <!--///////-footer-section-start-///////-->
 
- <div class="footer-section">
+ {{-- <div class="footer-section">
      <div class="container">
          <div class="flex-column">
              <div class="footer-widget footer-contact-info">
@@ -31,13 +31,11 @@
 
          </div>
      </div>
- </div>
+ </div> --}}
  <div class="bottom-footer">
      <div class="container">
          <div class="copy-right">
-             <p class="m-0">All Rights Reserved <strong>{{ ucfirst($site_info->name) }}</strong> | Designed
-                 And developed by <strong>Security First</strong> | Powdered by <strong>Business Mind
-                     Academy</strong></p>
+             <p class="m-0">Powdered by <strong> e-Business Clinic</strong></p>
          </div>
      </div>
  </div>
@@ -45,13 +43,6 @@
  <!--///////-footer-section-end-///////-->
 
  {{-- javascript linking  --}}
- <script src="https://code.jquery.com/jquery-3.6.3.min.js"
-     integrity="sha256-pvPw+upLPUjgMXY0G+8O0xUf+/Im1MZjXxxgOcBQBXU=" crossorigin="anonymous"></script>
 
 
- {{-- ================================================================================================
-        =============================================  javascript  global function ========================
-        =================================================================================================  --}}
- <script>
-    
- </script>
+

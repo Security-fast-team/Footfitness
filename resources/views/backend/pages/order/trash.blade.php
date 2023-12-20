@@ -32,14 +32,10 @@
                                         <th>S.N.</th>
                                         <th>Order No.</th>
                                         <th>Name</th>
-                                        <th>phone</th>
-                                        <th>Email</th>
-                                        <th>Quantity</th>
-                                        <th>Shiping Charge</th>
-                                        <th>Total Amount</th>
-                                        <th>Payment Number</th>
-                                        <th>Payment Method</th>
-                                        <th>Ordered Time</th>
+                                        <th>Phone</th>
+                                        <th>Address</th>
+                                        <th>Price</th>
+                                        <th>Deleted At</th>
                                         <th>Status</th>
                                         <th>Action</th>
                                     </tr>
@@ -49,16 +45,16 @@
                                         <tr>
                                             <td>{{ $key + 1 }}</td>
                                             <td>{{ $order->order_number }}</td>
-                                            <td>{{ $order->first_name }}</td>
+                                            <td>{{ $order->name }}</td>
                                             <td>{{ $order->phone }}</td>
-                                            <td>{{ $order->email }}</td>
-                                            <td>{{ $order->quantity }}</td>
-                                            <td>{{ $order->shipping->price }}</td>
-                                            <td>TK{{ number_format($order->total_amount, 2) }}
+                                            <td>{!! $order->address !!}</td>
+                                            <td>{{ $price}}</td>
+                                            {{-- @if ($order->shipping)
+                                                <td class="align-middle">{{ $order->shipping->type . '(৳' . Number_format($order->shipping->price) . ')' }}</td>
+                                                <td class="align-middle">৳{{ Number_format($price+$order->shipping->price) }}</td>
+                                            @endif --}}
                                             </td>
-                                            <td>{{ $order->payment_number }}</td>
-                                            <td>{{ $order->pamyment_methods }}</td>
-                                            <td>{{ $order->created_at->diffForHumans() }}</td>
+                                            <td>{{$order->updated_at->diffForHumans()}}</td>
                                             <td>
                                                 @if ($order->order_status == 'new')
                                                     <span class="badge badge-primary">{{ $order->order_status }}</span>
@@ -93,38 +89,5 @@
             </div>
         </div>
     </div>
-
 @endsection
 
-
-
-@push('third_party_scripts')
-    <script src="{{ asset('assets/backend/js/DataTable/datatables.min.js') }}"></script>
-@endpush
-
-@push('page_scripts')
-    <script>
-        $(document).ready(function() {
-            $('#table').DataTable({
-                dom: 'Bfrtip',
-                buttons: [{
-                        extend: 'pdfHtml5',
-                        title: 'District Management',
-                        download: 'open',
-                        orientation: 'potrait',
-                        pagesize: 'LETTER',
-                        exportOptions: {
-                            columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-                        }
-                    },
-                    {
-                        extend: 'print',
-                        exportOptions: {
-                            columns: [0, 1, 2, 3, 4, 5, 6, 7, 8, 9, 10, 11]
-                        }
-                    }, 'pageLength'
-                ]
-            });
-        });
-    </script>
-@endpush

@@ -24,7 +24,7 @@ class OrderController extends Controller
      */
     public function index()
     {
-        $orders=Order::with(['shipping','product'])->orderBy('id','DESC')->where('status','active')->get()->groupBy('order_number');
+        $orders=Order::with(['shipping'])->orderBy('id','DESC')->where('status','active')->get()->groupBy('order_number');
         return view('backend.pages.order.index')->with('orders',$orders);
     }
 
@@ -64,10 +64,7 @@ class OrderController extends Controller
         Validator::make($request->all(),$rule,$msg,$attributes);
         $order_number = 'ORD-'.strtoupper(Str::random(10));
 
-        // foreach($request->product as $key => $qty){
-            // dd($request->all());
             $insert=new Order();
-            $insert->product_id = $request->product_id;
             $insert->shipping_id = $request->shipping_id;
             $insert->user_id = $request->user_id;
             $insert->name = $request->name;
@@ -75,7 +72,6 @@ class OrderController extends Controller
             $insert->note = $request->note;
             $insert->phone = $request->phone;
             $insert->quantity = 1;
-            $insert->payment_id = $request->payment_id;
             $insert->payment_number = $request->payment_number;
             $insert->transection = $request->transection;
             // $insert->payment_method = $request->payment_method;
@@ -326,7 +322,7 @@ class OrderController extends Controller
     }
 
     public function thanks($order_no){
-        $n['order'] = Order::with(['product','shipping','product.category'])->where('order_number',$order_no)->first();
+        $n['order'] = Order::with(['shipping'])->where('order_number',$order_no)->first();
         return view('frontend.thanks',$n);
     }
 

@@ -11,6 +11,7 @@ use App\Models\Shipping;
 use App\Models\Product;
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\DB;
+use Illuminate\Support\Facades\Artisan;
 
 class FrontendController extends Controller
 {
@@ -38,6 +39,8 @@ class FrontendController extends Controller
      */
     public function index()
     {
+        Artisan::call('view:clear');
+      Artisan::call('cache:clear');
         //websiteSetting check
         $data = CompanyInfo::all();
             if(count($data)<1){

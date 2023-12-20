@@ -3,52 +3,71 @@
     <style>
         @import url('https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@300;400;500;600;700&display=swap');
 
+        * {
+            padding: 0;
+            margin: 0;
+        }
+
         body {
             font-family: 'Hind Siliguri', sans-serif;
         }
 
-        .main {
+        .thank-you-page {
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+        }
+
+        .thank-you-container {
             max-width: 760px;
             margin: 0 auto;
-            padding: 0 13px;
+            padding: 0 30px;
             box-sizing: border-box;
+        }
+
+        .thank-you-main {
+            padding: 0 13px;
             border: 3px solid #416d4a;
             border-top: 20px solid #416d4a;
             border-radius: 40px;
-            margin-top: 63px;
         }
 
-        .main h2 {
+        .thank-you-main h2 {
             color: #55B067;
             font-family: "Hind Siliguri", Sans-serif;
             font-size: 22px;
             font-weight: 600;
             line-height: 34px;
             text-align: center;
+            margin: 20px 0;
         }
 
-        .main h3 {
+        .thank-you-page h3 {
             color: #000000;
             font-size: 27px;
             font-weight: 500;
             text-align: center;
+            margin-bottom: 30px;
+            line-height: 32px;
+
         }
 
-        .main p {
+        .thank-you-main p {
             color: #404040;
             font-size: 15px;
             margin: 25px 0;
         }
 
-        .main .order-col {
+        .thank-you-main .order-col {
             background-color: #F1F1F1;
         }
 
-        .main .order-col table {
+        .thank-you-main .order-col table {
             padding: 30px;
         }
 
-        .main .order-col th {
+        .thank-you-main .order-col th {
             font-size: 14px;
             color: #000;
             font-weight: 300;
@@ -58,82 +77,188 @@
             padding: 0 10px;
         }
 
-        .main .order-col th:last-child {
+        .thank-you-main .order-col th:last-child {
             border-right: none;
         }
 
-        .main .order-col td {
+        .thank-you-main .order-col td {
             font-size: 14px;
             color: #000;
             font-weight: 500;
-            width: 100px;
+            max-width: 135px;
             border-right: 1px dashed #000;
             padding: 0 10px;
         }
 
-        .main .order-col td:last-child {
+        .thank-you-main .order-col td:last-child {
             border-right: none;
         }
 
-        @media only screen and (max-width: 600px) {
-            .main .order-col table tbody {
+        /* footer-section */
+        .footer-section {
+            background-color: #000;
+            text-align: center;
+            width: 100%;
+            position: absolute;
+            bottom: 0;
+        }
+
+        .footer-section p {
+            color: #fff;
+            font-size: 16px;
+            font-weight: 400;
+            padding: 10px 30px;
+        }
+
+        .footer-section p span {
+            font-weight: 700;
+        }
+
+        /* responsive-design code */
+        @media only screen and (max-width: 767px) {
+            .thank-you-container {
+                padding: 0 15px;
+            }
+
+            .thank-you-main {
+                padding: 0px 10px;
+            }
+
+            .thank-you-main .order-col table tbody {
                 display: flex;
             }
 
-            .main .order-col tr {
+            .thank-you-main .order-col tr {
                 display: flex;
                 flex-direction: column;
             }
 
-            .main .order-col td,
-            .main .order-col th {
-                border: none;
+            .thank-you-main .order-col td,
+            .thank-you-main .order-col th {
+                border-right: none;
                 border-bottom: 1px dashed #000;
                 padding: 10px 0;
-
             }
 
-            .main table {
+            .thank-you-main .order-col table {
+                padding: 20px;
+                padding-bottom: 28px;
+            }
+
+            .thank-you-main .order-col td {
+                padding-left: 30px;
+                padding-right: 10px;
+            }
+
+            .thank-you-main .order-col th {
+                padding-right: 30px;
+            }
+
+            .thank-you-main table {
                 width: 100%;
             }
 
-            .main .order-col {
+            .thank-you-main .order-col {
                 border-radius: 15px;
             }
 
-            .main h3 {
+            .thank-you-main h3 {
                 font-size: 25px;
                 line-height: 32px;
             }
         }
 
-        .footer-section {
-            margin-top: 45px;
+        @media only screen and (max-width: 414px) {
+            .thank-you-main .order-col td {
+                padding-left: 0;
+                padding-right: 0;
+            }
+
+            .thank-you-main .order-col th {
+                padding-right: 0;
+            }
+
+            .thank-you-main h2 {
+                font-size: 18px;
+                line-height: 28px;
+            }
+
+            .thank-you-page h3 {
+                font-size: 22px;
+                line-height: 27px;
+            }
+
+            .thank-you-main p {
+                text-align: center;
+            }
+        }
+
+        @media only screen and (max-width: 360px) {
+            .thank-you-main .order-col table {
+                padding: 10px;
+            }
         }
     </style>
 @endpush
 @section('page_conent')
-    <div class="main">
-        <h2>আপনার অর্ডারটি সফল হয়েছে। ঢাকার ভিতরে ২৪ ঘন্টার ভিতরে ডেলিভারি পাবেন এবং ঢাকার বাইরে তিন দিনের ভিতর ডেলিভারি
-            পাবেন
-        </h2>
-        <h3>Thank you. Your order has been received.</h3>
+<div class="thank-you-page">
+    <div class="thank-you-container">
+      <h3>
+        <span>Thank you. </span><br />
+        Your order has been received.
+      </h3>
+      <div class="thank-you-main">
+        <h2>আপনার অর্ডারটি সফল হয়েছে। ঢাকার ভিতরে ২৪ ঘন্টার ভিতরে ডেলিভারি পাবেন এবং ঢাকার বাইরে তিন দিনের ভিতর ডেলিভারি পাবেন</h2>
+
         <div class="order-col">
-            <table>
-                <tr>
-                    <th>Order number:</th>
-                    <th>Date:</th>
-                    <th>Total:</th>
-                    <th>Payment method:</th>
-                </tr>
-                <tr>
-                    <td>{{$order->order_number}}</td>
-                    <td>{{date('d-m-Y', strtotime($order->created_at))}}</td>
-                    <td>৳ {{$order->price + $order->shipping->price}}</td>
-                    <td>Cash on delivery</td>
-                </tr>
-            </table>
+          <table>
+            <tr>
+              <th>Order number:</th>
+              <th>Date:</th>
+              <th>Total:</th>
+              <th>Payment method:</th>
+            </tr>
+            <tr>
+                <td>{{$order->order_number}}</td>
+                <td>{{date('d-m-Y', strtotime($order->created_at))}}</td>
+                <td>৳ {{$price}}</td>
+                <td>Cash on delivery</td>
+            </tr>
+          </table>
         </div>
         <p>Pay with cash upon delivery.</p>
+      </div>
     </div>
+  </div>
+
 @endsection
+
+@push('js')
+ {{-- Push data to google  --}}
+ <script type="text/javascript">
+    dataLayer.push({
+        ecommerce: null
+    }); // Clear the previous ecommerce object.
+    dataLayer.push({
+        event: "purchase",
+        ecommerce: {
+            transaction_id: "{{ $order->order_number }}",
+            value: "{{ $price }}",
+            shipping: "0",
+            currency: "BDT",
+            items: [
+                    {
+                        item_name: "পিউরিফায়ার ডিভাইস",
+                        item_id: "{{ $order->id ?? 1}}",
+                        price: "{{ $price }}",
+                        discount: "{{ $with_dis - $price }}",
+                        item_category: "",
+                        item_variant: "",
+                        quantity: "{{ $order->quantity ?? 1 }}"
+                    }
+            ]
+        }
+    });
+</script>
+
+@endpush
